@@ -1,6 +1,6 @@
 import './App.css'
 import { TokenLaunchpad } from './components/TokenLaunchpad'
-
+import { TokenSwap } from './components/Tokenswap'
 // wallet adapter imports
 import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react';
 import {
@@ -25,6 +25,7 @@ function App() {
                 <WalletDisconnectButton />
               </div>
               <TokenLaunchpad></TokenLaunchpad>
+              <TokenSwap></TokenSwap>
             </WalletModalProvider>
         </WalletProvider>
       </ConnectionProvider>
